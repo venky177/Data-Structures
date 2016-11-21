@@ -1,5 +1,5 @@
 # Data-Structures And Algorithms 
-Implementation of Basic Data Structures Algorithms
+Implementation of Basic Data Structures and Algorithms
 
 AVL Tree
 
