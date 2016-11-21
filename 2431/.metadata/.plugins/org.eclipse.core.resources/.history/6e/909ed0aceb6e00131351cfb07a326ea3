@@ -1,0 +1,250 @@
+//============================================================================
+// Name        : report.cpp
+// Author      : Venkatesh Lokare
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+class node
+{
+	int dd,mm,yy;
+	float ht,lt,ar,as;
+	node *next,*pre;
+	public:
+	friend class report;
+	node(int day,int month,int year,float h ,float l,float r,float s)
+	{	dd=day;
+		mm=month;
+		yy=year;
+		ht=h;
+		lt=l;
+		ar=r;
+		as=s;
+		next=NULL,pre=NULL;
+	}
+
+};
+class report
+{
+	node*m[13],*end[13];
+	public:
+	friend class node;
+	int get(node *p,int s)
+		{
+			switch(s)
+			{
+			case 0:
+				return(p->yy);
+			case 1:
+				return(p->mm);
+			case 2:
+				return(p->dd);
+			case 3:
+				return(p->ht);
+			case 4:
+				return(p->lt);
+			case 5:
+				return(p->ar);
+			case 6:
+				return(p->as);
+			}
+		}
+		node* point(node*p,int v)
+		{
+			if(v==0) return(p->next);
+			return(p->pre);
+		}
+	report()
+	{
+		for(int i=0;i<13;i++)
+		{
+			end[i]=NULL;
+			m[i]=NULL;
+		}
+	}
+	int valid(int dd,int mm,int yy)
+	{
+		if(dd>31 || mm>12)
+		{
+			return(1);
+		}
+		else if(mm==2||mm==4||mm==6||mm==9||mm==11)
+		{
+			if(dd==31) return(1);
+		}
+		else if(yy%100==0 && yy%4!=0)
+		{
+			if(mm==2)
+			{
+				if(dd>29)
+				{
+					return(1);
+				}
+			}
+		}
+		else if(mm==2 && dd>=29)
+		{
+			return(1);
+		}
+		else
+		{
+			return(0);
+		}
+	}
+	void entry()
+	{	int dd,mm,yy;
+		float ht,lt,ar,as,c;
+		cout<<"enter date(dd mm yyyy)"<<endl;
+		cin>>dd>>mm>>yy;
+		c=valid(dd,mm,yy);
+		if(c==1){
+			cout<<"invalid date"<<endl;
+		}
+		else{
+		cout<<"enter high temp ,low temp, amount rain,amount snow"<<endl;
+		cin>>ht>>lt>>ar>>as;
+		node*p=new node(dd,mm,yy,ht,lt,ar,as);
+		store(p);
+		}
+	}
+
+	void store(node*p)
+	{	node*temp=m[p->mm];
+		if(m[p->mm]==NULL)
+		{
+			end[p->mm]=m[p->mm]=p;
+		}
+		else if(m[p->mm]->dd>p->dd)
+				{
+					m[p->mm]->pre=p;
+					p->next=m[p->mm];
+					m[p->mm]=p;
+				}
+				else if(end[p->mm]->dd<=p->dd)
+				{
+					end[p->mm]->next=p;
+					p->pre=end[p->mm];
+					end[p->mm]=p;
+				}
+				else
+				{
+					while(temp->dd<=p->dd)
+					{
+						temp=temp->next;
+					}
+					p->next=temp;
+					p->pre=temp->pre;
+					temp->pre->next=p;
+					temp->pre=p;
+				}
+	}
+	void display()
+		{	node*temp;
+			for(int i=1;i<13;i++)
+			{
+			cout<<i<<" ";
+			if(m[i]!=NULL)
+			{
+				temp=m[i];
+				while(temp!=NULL)
+				{
+					cout<<get(temp,2)<<"/"<<get(temp,1)<<"/"<<get(temp,0)<<" "<<get(temp,3)<<" "<<get(temp,4)<<" "<<get(temp,5)<<" "<<get(temp,6)<<endl;
+					temp=point(temp,1);
+				}
+			}
+			cout<<endl;
+			}
+		}
+
+void list()
+{	int sty,stm,std,eny,enm,end;
+	cout<<"enter start date (dd/mm/yyyy)"<<endl;
+	cin>>std>>stm>>sty;
+	cout<<"enter end date (dd/mm/yyyy)"<<endl;
+	cin>>end>>enm>>eny;
+	int l=end,v=enm;
+	float yravg[3],moavg[3],totavg[3],yrcou=0,mocou=0,totcou=0;
+	for(int i=0;i<3;i++)
+	{
+		yravg[i]=moavg[i]=totavg[i]=0;
+	}
+	for(int y=sty;y<=eny;y++)
+	{	yrcou=yravg[0]=yravg[1]=yravg[2]=0;
+		if(y!=sty)stm=1;
+		if(y==eny)enm=v;
+		else enm=12;
+		for(int mo=stm;mo<=enm;mo++)
+		{	mocou=moavg[0]=moavg[1]=moavg[2]=0;
+			if(m[mo]!=NULL)
+			{
+				if(mo!=stm)std=1;
+				if(mo==enm)end=l;
+				else end=31;
+			for(int da=std;da<=end;da++)
+			{	node*temp=m[mo];
+				while(temp!=NULL)
+				{
+				if(y==temp->yy&&mo==temp->mm&&da==temp->dd)
+					{
+					cout<<temp->dd<<"/"<<temp->mm<<"/"<<temp->yy<<" "<<temp->ht<<" "<<temp->lt<<" "<<temp->ar<<" "<<temp->as<<endl;
+					moavg[0]=moavg[0]+((temp->ht+temp->lt)/2);
+					moavg[1]=moavg[1]+temp->ar;
+					moavg[2]=moavg[2]+temp->as;
+					mocou++;
+					}
+				temp=temp->next;
+				}
+			}
+			}
+		if(mocou!=0)
+			{
+			cout<<" for month "<<mo<<"avg temp is"<<moavg[0]/mocou<<endl;
+			cout<<" for month "<<mo<<"avg rain is"<<moavg[1]/mocou<<endl;
+			cout<<" for month "<<mo<<"avg snow is"<<moavg[2]/mocou<<endl;
+
+
+			}
+		for(int i=0;i<3;i++)yravg[i]=yravg[i]+moavg[i];
+		yrcou=yrcou+mocou;
+
+		}
+	if(yrcou!=0)
+		{
+		cout<<"year avg temp is"<<yravg[0]/yrcou<<endl;
+		cout<<"year avg rain is"<<yravg[1]/yrcou<<endl;
+		cout<<"year avg snow is"<<yravg[2]/yrcou<<endl;
+		}
+	for(int j=0;j<3;j++)totavg[j]=totavg[j]+yravg[j];
+	totcou=totcou+yrcou;
+	}
+	if(totcou!=0)
+		{
+		cout<<"total avg temp is"<<totavg[0]/totcou<<endl;
+		cout<<"total avg rain is"<<totavg[1]/totcou<<endl;
+		cout<<"total avg snow is"<<totavg[2]/totcou<<endl;
+		}
+}
+};
+int main() {
+	report r;
+	int ch;
+	while(1)
+	{
+	cout<<"1)entry 2)display"<<endl;
+	cin>>ch;
+	switch(ch)
+	{
+	case 1:
+		r.entry();
+		break;
+	case 2:
+		r.display();
+		r.list();
+		break;
+	}
+	}
+	return 0;
+}

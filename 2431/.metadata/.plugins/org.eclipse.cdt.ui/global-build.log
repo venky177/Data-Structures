@@ -1,0 +1,1311 @@
+
+**** Build of configuration Debug for project library ****
+
+make all 
+Building file: ../src/bst.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bst.d" -MT"src/bst.d" -o "src/bst.o" "../src/bst.cpp"
+../src/bst.cpp: In member function ‘int dict::search1(node*, char*)’:
+Finished building: ../src/bst.cpp
+../src/bst.cpp:187:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 
+Building target: library
+Invoking: GCC C++ Linker
+g++  -o "library"  ./src/bst.o ./src/library.o   
+Finished building target: library
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+Building file: ../src/bst.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bst.d" -MT"src/bst.d" -o "src/bst.o" "../src/bst.cpp"
+../src/bst.cpp: In member function ‘int dict::search1(node*, char*)’:
+../src/bst.cpp:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/bst.cpp
+ 
+Building target: library
+Invoking: GCC C++ Linker
+g++  -o "library"  ./src/bst.o ./src/library.o   
+Finished building target: library
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release test2.pro 
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release test.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test'
+/usr/lib64/qt4/bin/uic test.ui -o ui_test.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/test.o test.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. test.h -o debug/moc_test.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_test.o debug/moc_test.cpp
+g++  -o test debug/main.o debug/test.o debug/moc_test.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'test' && test -f test.gdb-index && objcopy --add-section '.gdb_index=test.gdb-index' --set-section-flags '.gdb_index=readonly' 'test' 'test' && rm -f test.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/test'
+make clean 
+make -f Makefile.Release clean
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+rm -f release/moc_test2.cpp
+rm -f ui_test2.h
+rm -f release/main.o release/test2.o release/moc_test2.o
+rm -f *~ core *.core
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+make -f Makefile.Debug clean
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+rm -f debug/moc_test2.cpp
+rm -f ui_test2.h
+rm -f debug/main.o debug/test2.o debug/moc_test2.o
+rm -f *~ core *.core
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release test2.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+/usr/lib64/qt4/bin/uic test2.ui -o ui_test2.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/test2.o test2.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. test2.h -o debug/moc_test2.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_test2.o debug/moc_test2.cpp
+g++  -o test2 debug/main.o debug/test2.o debug/moc_test2.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'test2' && test -f test2.gdb-index && objcopy --add-section '.gdb_index=test2.gdb-index' --set-section-flags '.gdb_index=readonly' 'test2' 'test2' && rm -f test2.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+test2.h:46:5: error: ‘trialClass’ in namespace ‘Ui’ does not name a type
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+/usr/lib64/qt4/bin/uic test2.ui -o ui_test2.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/test2'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:39:5: error: ‘test2’ was not declared in this scope
+make[1]: Leaving directory `/home/Student/workspace/2431/test2'
+main.cpp:39:11: error: expected ‘;’ before ‘w’
+main.cpp:40:5: error: ‘w’ was not declared in this scope
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release trial.pro 
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/trial.o trial.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. trial.h -o debug/moc_trial.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_trial.o debug/moc_trial.cpp
+g++  -o trial debug/main.o debug/trial.o debug/moc_trial.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'trial' && test -f trial.gdb-index && objcopy --add-section '.gdb_index=trial.gdb-index' --set-section-flags '.gdb_index=readonly' 'trial' 'trial' && rm -f trial.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release trial.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+/usr/lib64/qt4/bin/uic trial.ui -o ui_trial.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/trial.o trial.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. trial.h -o debug/moc_trial.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_trial.o debug/moc_trial.cpp
+g++  -o trial debug/main.o debug/trial.o debug/moc_trial.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'trial' && test -f trial.gdb-index && objcopy --add-section '.gdb_index=trial.gdb-index' --set-section-flags '.gdb_index=readonly' 'trial' 'trial' && rm -f trial.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+/usr/lib64/qt4/bin/uic trial.ui -o ui_trial.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/trial.o trial.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. trial.h -o debug/moc_trial.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_trial.o debug/moc_trial.cpp
+g++  -o trial debug/main.o debug/trial.o debug/moc_trial.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'trial' && test -f trial.gdb-index && objcopy --add-section '.gdb_index=trial.gdb-index' --set-section-flags '.gdb_index=readonly' 'trial' 'trial' && rm -f trial.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/trial.o trial.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. trial.h -o debug/moc_trial.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_trial.o debug/moc_trial.cpp
+g++  -o trial debug/main.o debug/trial.o debug/moc_trial.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'trial' && test -f trial.gdb-index && objcopy --add-section '.gdb_index=trial.gdb-index' --set-section-flags '.gdb_index=readonly' 'trial' 'trial' && rm -f trial.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release hello.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+hello.h:46:5: error: ‘Ui’ does not name a type
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+/usr/lib64/qt4/bin/uic trial.ui -o ui_trial.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/trial.o trial.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. trial.h -o debug/moc_trial.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_trial.o debug/moc_trial.cpp
+g++  -o trial debug/main.o debug/trial.o debug/moc_trial.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'trial' && test -f trial.gdb-index && objcopy --add-section '.gdb_index=trial.gdb-index' --set-section-flags '.gdb_index=readonly' 'trial' 'trial' && rm -f trial.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from hello.h:35:0,
+                 from main.cpp:31:
+ui_hello.h:27:41: error: ‘helloClass’ has not been declared
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+ui_hello.h:27:51: error: ISO C++ forbids declaration of ‘connectSlotsByName’ with no type [-fpermissive]
+ui_hello.h:27:51: error: cannot declare member function ‘QMetaObject::connectSlotsByName’ within ‘Ui_helloClass’
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+make[1]: Nothing to be done for `first'.
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In constructor ‘hello::hello(QWidget*)’:
+hello.cpp:36:5: error: ‘class Ui::helloClass’ has no member named ‘setupUi’
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+make[1]: Nothing to be done for `first'.
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release hello.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release hello.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+make[1]: Nothing to be done for `first'.
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+/usr/lib64/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile hello.pro
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+person.h:12:1: error: ‘QString’ does not name a type
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+person.h:14:17: error: expected ‘)’ before ‘name’
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+person.h:12:1: error: ‘QString’ does not name a type
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+person.h:14:17: error: expected ‘)’ before ‘name’
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+person.h:12:1: error: ‘QString’ does not name a type
+person.h:14:18: error: expected ‘)’ before ‘name’
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+person.h:12:1: error: ‘QString’ does not name a type
+person.h:14:17: error: expected ‘)’ before ‘name’
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+person.h:12:1: error: ‘QString’ does not name a type
+person.h:14:17: error: field ‘QString’ has incomplete type
+person.h:14:17: error: expected ‘;’ at end of member declaration
+person.h:14:18: error: ‘name’ does not name a type
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+person.h:12:1: error: ‘QString’ does not name a type
+person.h:14:16: error: expected ‘)’ before ‘name’
+person.cpp:10:16: error: definition of implicitly-declared ‘person::person()’
+make[1]: *** [debug/person.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+In file included from person.cpp:8:0:
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+person.h:12:1: error: ‘QString’ does not name a type
+person.h:15:17: error: expected ‘)’ before ‘name’
+make[1]: *** [debug/person.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+hello.h:45:17: error: ‘person’ has not been declared
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+hello.h:45:17: error: ‘person’ has not been declared
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+hello.h:45:17: error: ‘person’ has not been declared
+make[1]: *** [debug/main.o] Error 1
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:31:0:
+hello.h:46:17: error: ‘person’ has not been declared
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/main.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:2: error: ‘person’ was not declared in this scope
+hello.cpp:55:10: error: ‘p’ was not declared in this scope
+hello.cpp:55:16: error: expected type-specifier before ‘person’
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+hello.cpp:55:16: error: expected ‘;’ before ‘person’
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:2: error: ‘person’ was not declared in this scope
+hello.cpp:55:10: error: ‘p’ was not declared in this scope
+hello.cpp:56:8: error: expected type-specifier before ‘person’
+hello.cpp:56:8: error: expected ‘;’ before ‘person’
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:2: error: ‘person’ was not declared in this scope
+hello.cpp:55:10: error: ‘p’ was not declared in this scope
+hello.cpp:56:8: error: expected type-specifier before ‘person’
+hello.cpp:56:8: error: expected ‘;’ before ‘person’
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+/usr/lib64/qt4/bin/qmake -recursive CONFIG+=debug_and_release hello.pro 
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+hello.cpp: In member function ‘void hello::insert(person*)’:
+hello.cpp:65:12: error: ‘class person’ has no member named ‘next’
+hello.cpp: In member function ‘void hello::search()’:
+hello.cpp:71:19: error: base operand of ‘->’ has non-pointer type ‘Ui::helloClass’
+hello.cpp:76:11: error: base operand of ‘->’ has non-pointer type ‘Ui::helloClass’
+hello.cpp: At global scope:
+hello.cpp:80:35: error: no ‘void hello::on_pushButton_clicked()’ member function declared in class ‘hello’
+hello.cpp:94:37: error: no ‘void hello::on_pushButton_2_clicked()’ member function declared in class ‘hello’
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+hello.cpp: In member function ‘void hello::insert(person*)’:
+hello.cpp:65:12: error: ‘class person’ has no member named ‘next’
+hello.cpp: In member function ‘void hello::search()’:
+hello.cpp:71:20: error: ‘class Ui::helloClass’ has no member named ‘lineEdit_9’
+hello.cpp:76:12: error: ‘class Ui::helloClass’ has no member named ‘textEdit’
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+/usr/lib64/qt4/bin/uic hello.ui -o ui_hello.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+hello.cpp: In member function ‘void hello::insert(person*)’:
+hello.cpp:65:12: error: ‘class person’ has no member named ‘next’
+make[1]: *** [debug/hello.o] Error 1
+make: *** [debug] Error 2
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+hello.cpp: In member function ‘void hello::get()’:
+hello.cpp:55:10: warning: unused variable ‘p’ [-Wunused-variable]
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/person.o person.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/hello'
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/hello.o hello.cpp
+/usr/lib64/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. hello.h -o debug/moc_hello.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/lib64/qt4/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include -Idebug -I. -o debug/moc_hello.o debug/moc_hello.cpp
+g++  -o hello debug/person.o debug/main.o debug/hello.o debug/moc_hello.o    -L/usr/lib64 -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9]\+\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'hello' && test -f hello.gdb-index && objcopy --add-section '.gdb_index=hello.gdb-index' --set-section-flags '.gdb_index=readonly' 'hello' 'hello' && rm -f hello.gdb-index || true
+make[1]: Leaving directory `/home/Student/workspace/2431/hello'
+
+**** Build of configuration Debug for project library ****
+
+make all 
+Building file: ../src/bst.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bst.d" -MT"src/bst.d" -o "src/bst.o" "../src/bst.cpp"
+../src/bst.cpp: In member function ‘int dict::search1(node*, char*)’:
+../src/bst.cpp:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/bst.cpp
+ 
+Building target: library
+Invoking: GCC C++ Linker
+g++  -o "library"  ./src/bst.o ./src/library.o   
+Finished building target: library
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+Building file: ../src/bst.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bst.d" -MT"src/bst.d" -o "src/bst.o" "../src/bst.cpp"
+../src/bst.cpp: In member function ‘int dict::search1(node*, char*)’:
+../src/bst.cpp:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/bst.cpp
+ 
+Building target: library
+Invoking: GCC C++ Linker
+g++  -o "library"  ./src/bst.o ./src/library.o   
+Finished building target: library
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project library ****
+
+make all 
+Building file: ../src/bst.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bst.d" -MT"src/bst.d" -o "src/bst.o" "../src/bst.cpp"
+../src/bst.cpp: In member function ‘int dict::search1(node*, char*)’:
+../src/bst.cpp:186:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/bst.cpp
+ 
+Building target: library
+Invoking: GCC C++ Linker
+g++  -o "library"  ./src/bst.o ./src/library.o   
+Finished building target: library
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+Building file: ../src/report.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/report.d" -MT"src/report.d" -o "src/report.o" "../src/report.cpp"
+../src/report.cpp: In member function ‘int report::valid(int, int, int)’:
+../src/report.cpp:96:2: warning: control reaches end of non-void function [-Wreturn-type]
+../src/report.cpp: In member function ‘int report::get(node*, int)’:
+../src/report.cpp:54:3: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/report.cpp
+ 
+Building target: report
+Invoking: GCC C++ Linker
+g++  -o "report"  ./src/report.o   
+Finished building target: report
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project report ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****

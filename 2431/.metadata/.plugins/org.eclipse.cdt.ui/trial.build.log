@@ -1,0 +1,5 @@
+make debug 
+make -f Makefile.Debug
+make[1]: Entering directory `/home/Student/workspace/2431/trial'
+make[1]: Nothing to be done for `first'.
+make[1]: Leaving directory `/home/Student/workspace/2431/trial'
